@@ -10,7 +10,7 @@ RUN npm install --global pnpm@12.10.1 \
 
 # Stage 1:
 # Build the Aquadactyl runtime image.
-FROM --platform=$TARGETOS/$TARGETARCH php:8.5-fpm-alpine
+FROM --platform=$TARGETOS/$TARGETARCH php:8.5.12-fpm-alpine
 WORKDIR /app
 
 COPY . ./
